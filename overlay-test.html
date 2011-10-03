@@ -1,0 +1,40 @@
+<!--This is the test html file for demonstrating the use of plugin-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Overlay plugin test</title>
+	<script type="text/javascript" src="jquery-1.2.6.pack.js"></script>
+	<script type="text/javascript" src="overlay.js"></script>
+	<style type="text/css">
+		div#overlay{
+			width: 500px;
+		}
+		div#overlay nav{
+			top: 100;
+		}
+	</style>
+</head>
+<body>
+	<div id="overlay">
+		<div id="layer1">
+			<p>zzfdsfds dsfsdf fsdf dsf dsfds fdsf sdf ew ewfdsf dsf d fsd f dsf sd fds f sf dsf sdf sd fs df dsf sdf df dsf d fds f dsf df  df dsf d fs f df ds fd f ew we wq ewdwq dwq  qwe wew e rwe  fds fds f df dsf sd f</p>
+		</div>
+		<div id="layer2">
+			<p>zzfdsfds dsfsdf fsdf dsf dsfds fdsf sdf ew ewfdsf dsf d fsd f dsf sd fds f sf dsf sdf sd fs df dsf sdf df dsf d fds f dsf df  df dsf d fs f df ds fd f ew we wq ewdwq dwq  qwe wew e rwe  fds fds f df dsf sd f</p>
+		</div>
+		<div id="layer3">
+			<p>zzfdsfds dsfsdf fsdf dsf dsfds fdsf sdf ew ewfdsf dsf d fsd f dsf sd fds f sf dsf sdf sd fs df dsf sdf df dsf d fds f dsf df  df dsf d fs f df ds fd f ew we wq ewdwq dwq  qwe wew e rwe  fds fds f df dsf sd f</p>
+		</div>
+		<nav>
+			<a href="#layer1">Layer1</a>
+			<a href="#layer2">Layer2</a>
+			<a href="#layer3">Layer3</a>
+		</nav>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$('#overlay').overlay();
+		});
+	</script>
+</body>
+</html>
