@@ -19,13 +19,16 @@
 		});
 
 		$("div:first-child").css("opacity","1");
+		$("div:first-child").css("z-index","300");
 
 		$("nav",this).css("position","absolute");
 
 		$("nav a",this).click(function(){
 			var href = $(this).attr('href');
 			$("div",element).animate({opacity: 0},300,"linear");
+			$("div",element).css("z-index","0");
 			$(href).animate({opacity: 1},600,"linear");
+			$(href).css("z-index","300");
 		});
 
 		return this;
